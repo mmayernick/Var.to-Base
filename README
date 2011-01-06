@@ -1,0 +1,7 @@
+== Var.to Base
+
+Var.to Base is an example Sinatra application with Twitter OAuth based authentication. The code is essentially the same as that running link:http://var.to, but with the asset files removed and the view files heavily stripped down.  The code here is released under the MIT license link:http://www.opensource.org/licenses/mit-license.php.
+
+== Var.to Base Features
+
+Var.to Base enables users to set multiple target urls for one shortened link.  This is useful for a/b testing certain pages.  User authentication is managed by Twitter OAuth.  The application has a limited set of admin features that includes banning users.

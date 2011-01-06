@@ -1,0 +1,10 @@
+<h2>Links <a href="/links/new">add new</a></h2>
+<table>
+	<tr>
+		<th>Hits</th>
+		<th>Address</th>
+		<th>Date</th>
+		<th>&nbsp;</th>
+	</tr>
+	<%= erb "links/_links".to_sym, :layout => false, :locals => {:links => @links} %>
+</table>

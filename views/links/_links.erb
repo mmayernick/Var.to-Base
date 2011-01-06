@@ -1,0 +1,8 @@
+<% links.each do |link| %>
+	<tr>
+		<td><%= link.targets.inject(0) { |sum, target| sum + target.hits } %></td>
+		<td><%= link.url %></td>
+		<td><%= link.created_at.strftime('%m/%d/%Y') %></td>
+		<td>[<a href="/links/<%= link.short %>">details</a>]</td>
+	</tr>
+<% end %>

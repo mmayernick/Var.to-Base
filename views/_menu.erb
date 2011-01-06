@@ -1,0 +1,16 @@
+<ul>
+	<% if @user %>
+		<li><a href="/links">Links</a></li>
+		<li><a href='/disconnect'>Logout</a></li>
+	<% else %>
+		<li>
+			<a href="/connect">Signin with Twitter</a>
+		</li>
+	<% end %>
+</ul>
+<% if @user && @user.admin? %>
+<ul>
+	<li><a href='/admin/users'>Admin Users</a></li>
+	<li><a href="/admin/links">Admin Links</a></li>
+</ul>
+<% end %>

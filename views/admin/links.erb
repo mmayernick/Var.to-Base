@@ -1,0 +1,23 @@
+<h2>Links</h2>
+<table>
+	<tr>
+		<th>&nbsp;</th>
+		<th>User</th>
+		<th>Targets</th>
+		<th>Created</th>
+	</tr>
+	<% @links.each do |link| %>
+		<tr>
+			<td><%= link.id %>
+			<td><%= link.user.login %></td>
+			<td>
+				<ul>
+					<% link.targets.each do |target| %>
+						<li><%= target.target %></li>
+					<% end %>
+				</ul>
+			</td>
+			<td><%= link.created_at.strftime('%m/%d/%Y') %>
+		</tr>
+	<% end %>
+</table>

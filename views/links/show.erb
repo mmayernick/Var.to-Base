@@ -1,0 +1,21 @@
+<h2><%= @link.url %> <a href="/links">back</a></h2>
+<p>
+	<%= @link.title %><br/>
+	<%= @link.description %>
+</p>
+<table>
+	<tr>
+		<th>Hits</th>
+		<th>Target</th>
+		<th>Weight</th>
+		<th>&nbsp;</th>
+	</tr>
+	<% @link.targets.each do |target| %>
+		<tr>
+			<td><%= target.hits %></td>
+			<td><%= truncate(target.target, 30) %></td>
+			<td><%= target.weight %>%</td>
+			<td>[<a href="<%= target.target %>" target="_blank">go</a>]</td>
+		</tr>
+	<% end %>
+</table>

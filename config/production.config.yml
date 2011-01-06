@@ -1,0 +1,5 @@
+host_addr: # add your host name, e.g. "mysite.com"
+consumer_key: # add your consumer key from twitter
+consumer_secret: # add your consumer sercret from twitter
+callback_url: # add your full callback_url including host, e.g. "http://mysite.com/oauth_callback"
+admin_twitter_login: # add a twitter account login here to automatically create an admin account upon initial login (do not include "@")
